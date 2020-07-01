@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>RewardsCalculator</groupId>
+	<artifactId>RewardsCalculator</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<version.spring.boot>1.5.19.RELEASE</version.spring.boot>
+		<version.springframework>4.3.22.RELEASE</version.springframework>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>${version.spring.boot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>${version.spring.boot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+			<version>${version.spring.boot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+			<version>${version.spring.boot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+			<version>${version.spring.boot}</version>
+			<!-- <scope>provided</scope> -->
+		</dependency>
+	   <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	        <version>${version.spring.boot}</version>
+	    </dependency>
+
+
+		<dependency>
+			<artifactId>spring-web</artifactId>
+			<groupId>org.springframework</groupId>
+			<version>${version.springframework}</version>
+		</dependency>
+		<dependency>
+			<artifactId>spring-core</artifactId>
+			<groupId>org.springframework</groupId>
+			<version>${version.springframework}</version>
+		</dependency>
+		<dependency>
+			<artifactId>spring-context</artifactId>
+			<groupId>org.springframework</groupId>
+			<version>${version.springframework}</version>
+		</dependency>
+		<dependency>
+			<artifactId>spring-expression</artifactId>
+			<groupId>org.springframework</groupId>
+			<version>${version.springframework}</version>
+		</dependency>
+		<dependency>
+			<artifactId>spring-beans</artifactId>
+			<groupId>org.springframework</groupId>
+			<version>${version.springframework}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.6</version>
+		</dependency>
+	</dependencies>
+
+</project>
